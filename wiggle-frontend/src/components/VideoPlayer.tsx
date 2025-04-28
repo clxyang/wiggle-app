@@ -1,17 +1,19 @@
 type Props = {
-    setPlayerRef: (ref: HTMLVideoElement) => void
-  }
-  
-  export default function VideoPlayer({ setPlayerRef }: Props) {
-    return (
+  setPlayerRef: (ref: HTMLVideoElement) => void
+  videoUrl: string
+}
+
+export default function VideoPlayer({ setPlayerRef, videoUrl }: Props) {
+  return (
+    <div className="flex flex-col items-center">
       <video
-        className="w-full max-h-[500px] bg-black"
+        className="w-full h-auto max-w-3xl bg-black rounded"
         controls
         ref={setPlayerRef}
       >
-        <source src="/videos/rehearsal1.mp4" type="video/mp4" />
+        <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    )
-  }
-  
+    </div>
+  )
+}
