@@ -85,18 +85,18 @@ export default function VideoPage() {
   }
 
   return (
-    <div className="flex h-screen">
+    <div className="video-page-container">
       <div className="flex-1 p-4 overflow-y-auto">
         {/* Back Button */}
         <button
           onClick={() => navigate('/')}
-          className="mb-4 text-blue-500 hover:underline"
+          className="back-to-home"
         >
           ← Back to Home
         </button>
 
         {/* Title */}
-        <h1 className="text-2xl font-bold mb-6">{rehearsalName}</h1>
+        <h1 className="rehearsal-title">{rehearsalName}</h1>
 
         {/* Video */}
         <VideoPlayer setPlayerRef={setPlayerRef} videoUrl={videoUrl} />

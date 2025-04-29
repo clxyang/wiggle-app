@@ -54,6 +54,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.rehearsal-upload-button {
+  color:#a49cbdf8;
+  background-color: transparent;
+  padding: 0.6em 1.2em;
+  border-color:#9185b4ac;
+  margin-top: 1rem;
+  font-size: small;
+}
+
+button:disabled,
+.rehearsal-upload-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

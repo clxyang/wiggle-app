@@ -1,7 +1,32 @@
+/* HOME PAGE ================ */
+
 .home-box {
   padding-left: 4rem;
 }
 
+/* VIDEO PAGE =============== */
+.video-page-container {
+  padding-left: 1rem;
+}
+
+.video {
+  width: 80%;
+}
+.back-to-home {
+  font-size: small;
+}
+.rehearsal-title {
+  font-size: 2rem;
+}
+
+/* NOTES ======================= */
+
+/* TODO fix: This styling isn't being applied */
+.note-timestamp-button {
+  margin-right: 5px;
+}
+
+/* IGNORE */
 .logo {
   height: 6em;
   padding: 1.5em;

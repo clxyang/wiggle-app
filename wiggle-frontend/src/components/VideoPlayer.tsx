@@ -5,9 +5,9 @@ type Props = {
 
 export default function VideoPlayer({ setPlayerRef, videoUrl }: Props) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="vid-container">
       <video
-        className="w-full h-auto max-w-3xl bg-black rounded"
+        className="video"
         controls
         ref={setPlayerRef}
       >

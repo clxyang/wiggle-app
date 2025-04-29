@@ -88,6 +88,8 @@ export default function HomePage() {
       <h1 className="text-3xl font-bold mb-4">Welcome to Wiggle</h1>
 
       <div className="space-y-2">
+        Upload a rehearsal video
+        <br></br>
         <input
           className="border p-2 w-64"
           placeholder="Rehearsal Title"
@@ -100,12 +102,15 @@ export default function HomePage() {
           className="block"
           onChange={(e) => setVideoFile(e.target.files?.[0] || null)}
         />
+        <br></br>
         <button
-          onClick={handleAddRehearsal}
-          className="block bg-blue-500 text-white px-4 py-2 rounded mt-2"
+            onClick={handleAddRehearsal}
+            className="rehearsal-upload-button"
+            disabled={!videoFile}
         >
-          Add New Rehearsal
+        Upload
         </button>
+
       </div>
 
       <div className="mt-8">

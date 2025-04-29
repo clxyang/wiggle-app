@@ -17,7 +17,7 @@ type Note = {
           <div key={note.id} className="mb-2">
             <button
               onClick={() => onJumpTo(note.time)}
-              className="text-blue-600 hover:underline"
+              className="note-timestamp-button"
             >
               [{note.time.toFixed(1)}s]
             </button>{' '}
